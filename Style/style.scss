@@ -39,7 +39,7 @@ body {
     @extend boxflex;
     justify-content: right;
     @extend formatless;
-
+    width: 100%;
     li{
         margin-right: 15px;
         a{
@@ -147,4 +147,50 @@ footer {
         }
        
    }
+}
+
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+    body{
+        background: red;
+        opacity: 20&;
+    }
+
+}
+
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    body{
+        background: orange;
+        opacity: 20&;
+    }
+
+}
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    body{
+        background: blue;
+        opacity: 20&;  
+    }
+}
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+    body{
+        background: green;
+        opacity: 20&;
+    }
+ }
+
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    body{
+        background: black;
+        opacity: 20&;
+    }
 }

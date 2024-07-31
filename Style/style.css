@@ -21,11 +21,13 @@ formatless ul li a, footer ul li a, .barra ul li a {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .barra {
   background-color: #2bf5f5;
   justify-content: right;
+  width: 100%;
 }
 .barra li {
   margin-right: 15px;
@@ -109,7 +111,7 @@ footer {
 footer .nica {
   font-family: sans-serif;
   background-color: rgba(244, 244, 244, 0.6039215686);
-  padding-left: 2%;
+  padding-left: 3%;
   font-size: 15px;
   color: #464c4c;
 }
@@ -120,4 +122,43 @@ footer .info {
 }
 footer .info li {
   margin-right: 30px;
+}
+
+/*Escritorio*/
+@media (min-width: 1199.98px) {
+  body {
+    background: red;
+    opacity: 20 body;
+  }
+}
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
+  body {
+    background: orange;
+    opacity: 20 body;
+  }
+}
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px) and (orientation: landscape) {
+  body {
+    background: blue;
+    opacity: 20 body;
+  }
+}
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px) and (orientation: portrait) {
+  body {
+    background: green;
+    opacity: 20 body;
+  }
+}
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: landscape) {
+  body {
+    background: black;
+    opacity: 20 body;
+  }
 }/*# sourceMappingURL=style.css.map */
