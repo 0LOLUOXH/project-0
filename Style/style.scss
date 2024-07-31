@@ -1,0 +1,150 @@
+$colortxt: #464c4c;
+$fuente: sans-serif;
+$colgris: #f4f4f49a;
+
+boxflex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+boxflexc {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+formatless {
+    ul{
+        @extend boxflex;
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                color: $colortxt;
+                font-family: $fuente;
+            }
+        }
+    }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.barra{
+    background-color: #2bf5f5;
+    @extend boxflex;
+    justify-content: right;
+    @extend formatless;
+
+    li{
+        margin-right: 15px;
+        a{
+            font-size: 12px;
+        }
+    }
+}
+
+.logo{
+    @extend boxflex;
+    justify-content: center;
+    height: 92px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.search{
+    @extend boxflexc;
+    justify-content: center;
+    .busqueda{
+        width: 600px;
+        height: 25px;
+        @extend boxflex;
+        margin: auto;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+        border-radius: 90px;
+        padding: 8px;
+        input{
+            width: 1000%;
+            border: none;
+            border-radius: 90px;
+            outline: none;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+.micro{
+    padding: 5px;
+    img{
+        height: auto;
+        width: 20px;
+    }
+}
+
+.lupa{
+    @extend .micro;
+    opacity: 30%;
+    margin-right: 10px;
+}
+
+.lens{
+    @extend .micro;
+    margin-left: 15px;
+}
+
+.menu{
+    padding: 2px;
+    margin-left: 10px;
+    img{
+        height: auto;
+        width: 15px;
+    }
+}
+
+.botones{
+    @extend boxflex;
+    justify-content: center;
+    button{
+        padding: 10px;
+        margin: 10px;
+        background-color: $colgris;
+        border-radius: 5px;
+        border: none;
+        font-size: 100%;
+        font-family: $fuente;
+        color: $colortxt;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @extend formatless;
+    @extend boxflexc;
+    
+    .nica{
+        font-family: $fuente;
+        background-color: $colgris;
+        padding-left: 3%;
+        font-size: 15px;
+        color: $colortxt;
+    }
+
+   .info{
+        @extend boxflex;
+        background-color: $colgris;
+        border-top: 1px solid darken($colgris, 10%);
+        justify-content: space-between;
+        li{
+            margin-right: 30px;
+        }
+       
+   }
+}
